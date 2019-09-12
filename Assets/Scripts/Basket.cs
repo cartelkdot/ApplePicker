@@ -8,7 +8,7 @@ public class Basket : MonoBehaviour
     [Header("Set Dynamically")]
     public Text scoreGT;
 
-    public void Start()
+     void Start()
     {
         //Find a reference to the ScoreCounter GameObject
         GameObject scoreGO = GameObject.Find("ScoreCounter");
@@ -36,7 +36,7 @@ public class Basket : MonoBehaviour
         this.transform.position = pos;
     }
 
-    private void OnCollisionEnter(Collision coll)
+     void OnCollisionEnter(Collision coll)
     {
         //Find out what hit his basket
         GameObject collidedWith = coll.gameObject;

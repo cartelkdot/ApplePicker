@@ -6,7 +6,7 @@ public class HighScore : MonoBehaviour
 {
     static public int score = 1000;
 
-    private void Awake()
+    void Awake()
     {
         //If the PlayerPrefs HighScore already exists, read it
         if (PlayerPrefs.HasKey("HighScore"))
